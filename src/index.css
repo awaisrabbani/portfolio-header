@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    @apply bg-gray-900
+}
+.container {
+    @apply mx-auto px-8
+}
+.nav-item {
+    @apply  px-4 py-[6px] font-semibold
+}
+.hover-effect {
+    @apply inline-block hover:text-gray-300 cursor-pointer after:block after:content-[""] after:border-b-2 after:border-b-white after:scale-x-0 after:transition after:ease-in-out after:duration-300 after:origin-[100%_50%] hover:after:origin-[0%_50%] hover:after:scale-x-100;
+}
+
+.active-menu {
+    @apply inline-block cursor-pointer after:block after:content-[""] after:border-b-2 after:border-b-white after:scale-x-100 after:transition after:ease-in-out after:duration-300 after:origin-[100%_50%]
+}
+
+.resume-btn {
+    @apply border rounded-[9999px] px-4 py-[6px] bg-white bg-opacity-100 text-gray-900 text-opacity-100
+}
